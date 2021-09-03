@@ -10,11 +10,13 @@ h1 {
 
 body {
     line-height: 1.5;
+    background-color: #33393f;
+    color: #e0eae4;
 }
 
 h2 {
-    padding-left: 10px;
-    border: 1px solid black;
+    /* padding-left: 10px;
+    border: 1px solid black; */
 }
 
 main {
@@ -25,25 +27,68 @@ main {
     justify-content: center;
 }
 
-.code-card {
-    flex: 1 1 100%;
+.card-column {
+    flex: 1 0 100%;
     padding: 10px;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     margin: 10px;
-    min-width: 450px;
+    /* min-width: 450px; */
+    transition: flex-basis 500ms linear;
 }
 
-section {
-    display: block;
-    /* max-width: 400px;     */
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 10px;
+    outline: 2px dashed #e0eae4;
+    /* outline-offset: 1px; */
+    transition: all 0.5s ease-in-out;
 }
+
+.code-card h2 {
+    position: relative;
+    margin: -30px 0 10px 0;
+    padding: 5px 10px;
+    background-color: rgb(204, 203, 204);
+    color: rgb(35, 0, 117);
+    border: 2px solid  black;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, .code-card:hover h2 {
+    box-shadow: inset 0px 0px 8px #e866ec, 0 0 15px #e866ec;
+}
+
+.code-card pre {
+    flex-grow: 1;
+}
+
 
 pre {
-    padding-top: 5px;
+    /* padding-top: 5px;
     margin-bottom: 10px;
-    height: 80%;
+    height: 80%; */
     font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
     'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
     'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
     monospace;
+
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 12px 10px;
+    color: #e0eae4;
+
+    background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+pre {
+    user-select: all;
 }
