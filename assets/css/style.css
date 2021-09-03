@@ -21,7 +21,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 
 .code-card {
@@ -32,9 +32,17 @@ main {
     border-width: 1px;
     /* display: flex;
     flex-wrap: wrap; */
+    margin: 10px;
+    min-width: 450px;
 }
 
 section {
     display: block;
-    max-width: 400px;    
+    /* max-width: 400px;     */
+}
+
+pre {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    height: 80%;
 }
