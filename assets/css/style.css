@@ -35,16 +35,12 @@ main {
     margin-top: 2%;
     margin-left: 10px;
     margin-right: 10px;
-    /* justify-content: center; */
 }
 
 .card-column {
     flex: 1 0 100%;
     padding: 10px;
     margin-bottom: 25px;
-    /* border: 1px dashed black; */
-    /* margin: 10px; */
-    /* min-width: 450px; */
     transition: flex-basis 500ms linear;
 }
 
@@ -55,7 +51,6 @@ main {
     min-height: 100%;
     padding: 10px;
     outline: 2px dashed var(--gin);
-    /* outline-offset: 1px; */
     transition: all 0.5s ease-in-out;
 }
 
@@ -107,10 +102,6 @@ pre {
         flex: 1 0 50%;
         max-width: 50%;
     }
-
-    /* .card-column:last-child {
-        flex-grow: 1;
-    } */
 }
 
 @media screen and (min-width: 992px) {
