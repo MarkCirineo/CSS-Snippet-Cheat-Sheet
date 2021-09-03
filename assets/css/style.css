@@ -21,6 +21,15 @@ h1 {
     color: var(--atlantis);
 }
 
+h2 {
+    font-size: 150%;
+}
+
+footer {
+    text-align: center;
+    color: var(--atlantis);
+}
+
 body {
     line-height: 1.5;
     background-color: var(--mulled-wine);
