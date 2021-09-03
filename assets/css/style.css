@@ -5,7 +5,7 @@ header {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 250%;
     padding: 10px;
 }
 
@@ -15,10 +15,6 @@ body {
     color: #e0eae4;
 }
 
-h2 {
-    /* padding-left: 10px;
-    border: 1px solid black; */
-}
 
 main {
     display: flex;
@@ -59,16 +55,13 @@ main {
     color: #e866ec;
     border: 2px solid  white;
     transition: all 0.5s ease-in-out;
+    border-radius: 8px;
+    font-size: 150%;
 }
 
 .code-card:hover, .code-card:hover h2 {
     box-shadow: inset 0px 0px 8px #e866ec, 0 0 15px #e866ec;
 }
-
-.code-card pre {
-    flex-grow: 1;
-}
-
 
 pre {
     font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
@@ -89,6 +82,12 @@ pre {
   display: flex;
   align-items: center;
   user-select: all;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.code-card p {
+    padding: 2px 0 7px 1px;
 }
 
 @media screen and (min-width: 768px) {
