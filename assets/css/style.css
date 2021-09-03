@@ -2,10 +2,11 @@
     --mulled-wine: #524a61;
     --atlantis: #6dd432;
     --gin: #e0eae4;
+    --neon-yellow: #d7ff6b;
 }
 
 ::selection {
-    background-color: #d7ff6b;
+    background-color: var(--neon-yellow);
     color: var(--mulled-wine);
 }
 
