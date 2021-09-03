@@ -20,8 +20,9 @@ h2 {
 main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 2%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .code-card {
