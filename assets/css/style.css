@@ -24,14 +24,17 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 2%;
-    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* justify-content: center; */
 }
 
 .card-column {
     flex: 1 0 100%;
     padding: 10px;
+    margin-bottom: 25px;
     /* border: 1px dashed black; */
-    margin: 10px;
+    /* margin: 10px; */
     /* min-width: 450px; */
     transition: flex-basis 500ms linear;
 }
@@ -67,9 +70,6 @@ main {
 
 
 pre {
-    /* padding-top: 5px;
-    margin-bottom: 10px;
-    height: 80%; */
     font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
     'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
     'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
@@ -90,3 +90,24 @@ pre {
   user-select: all;
 }
 
+@media screen and (min-width: 768px) {
+    .card-column {
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+
+    /* .card-column:last-child {
+        flex-grow: 1;
+    } */
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        /* width: 75%; */
+    }
+
+    .card-column {
+        flex: 1 0 33.333%;
+        max-width: 33.333%;
+    }
+}
