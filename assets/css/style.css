@@ -8,3 +8,10 @@ h1 {
     padding: 10px;
 }
 
+body {
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+}
